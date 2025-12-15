@@ -1,0 +1,44 @@
+[
+    {
+        "title": "work",
+        "spentTime": 32,
+        "lastWeekTime": 36,
+        "color": "var(--work)",
+        "icon": "icon-work.svg"
+    },
+    {
+        "title": "play",
+        "spentTime": 10,
+        "lastWeekTime": 8,
+        "color": "var(--play)",
+        "icon": "icon-play.svg"
+    },
+    {
+        "title": "study",
+        "spentTime": 4,
+        "lastWeekTime": 7,
+        "color": "var(--study)",
+        "icon": "icon-study.svg"
+    },
+    {
+        "title": "exercise",
+        "spentTime": 4,
+        "lastWeekTime": 5,
+        "color": "var(--exercise)",
+        "icon": "icon-exercise.svg"
+    },
+    {
+        "title": "social",
+        "spentTime": 5,
+        "lastWeekTime": 10,
+        "color": "var(--social)",
+        "icon": "icon-social.svg"
+    },
+    {
+        "title": "self-care",
+        "spentTime": 2,
+        "lastWeekTime": 2,
+        "color": "var(--self-care)",
+        "icon": "icon-self-care.svg"
+    }
+]

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-:root{
+:root {
   --purple-600: hsl(246, 80%, 60%);
   --work: hsl(15, 100%, 70%);
   --play: hsl(195, 74%, 62%);
@@ -17,4 +17,86 @@
   font-size: 18px;
 
   font-family: "Rubik";
+}
+
+body {
+  background: var(--navy-950);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cardElement {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+
+  header {
+    height: 70px;
+    padding: 0px 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+
+    img {
+      z-index: 1;
+      scale: 1.3;
+    }
+  }
+
+  section {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: -15px;
+    border-radius: 15px;
+    background: var(--navy-900);
+    color: white;
+
+    h2 {
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-weight: 200;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-weight: normal;
+      color: var(--navy-200)
+    }
+  }
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80vw;
+    .cardElement {
+      width: 100%;
+    }
+  }
 }
